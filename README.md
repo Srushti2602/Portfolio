@@ -5,6 +5,7 @@ I have created my portfolio website Using Svelte . This website is not like your
 # ⚡️SvelteKit-Portfolio⚡️
 
 ## A personal portfolio website made using `@sveltejs/kit`.
+The user can surf through this website as if its a Desktop . There are four folders and a NavBar below. The four folders Home, Projects, About and Experiences and Detailed information about me . The NavBar has icons and hyperlinks to github and linkedin. 
 
 <p align="left">
     <img width="500" height="auto" src="https://i.imgur.com/IafmSKu.png" alt="homepagescreenshot" />
@@ -19,19 +20,7 @@ To view a demo example, **[click here](https://gianmarco.netlify.app/)**
 - Blog made using `DEV.TO` API. (Medium WIP)
 - Fully Responsive
 - Performances and SEO optimizations
-- Ready to be deployed on [Netlify](https://www.netlify.com/)
-
-## Guide
-
-- In order to add a new route (page) you need to add it in `src\lib\NavRoutes.js` and create a new file in the `routes` folder with the same name as the route `eg: about`.
-
-In `src\lib\NavRoutes.js` you need to add in the `routes` an object with the following info for every route you want to add.
-
-    {
-    	href: '/globe', // route path
-    	label: 'Globe', // name showed in the navbar
-    	customColor: '#89a6fb' // OPTIONAL: a color that will be set when you switch route (for that specific route)
-    }
+- Looks Like a Desktop 
 
 # Dependencies
 
@@ -66,7 +55,5 @@ Deploying your website on Netlify it's optional but I reccomand it in order to d
 
 You just need to fork this repo and linking it to your Netlify account.
 
-## Authors ❤️
-
-- Gianmarco - https://github.com/Ladvace
+To make changes or regarding this project contact : sj4182@nyu.edu
 >>>>>>> 78bb544 (First Commit)
