@@ -6,12 +6,13 @@ I have created my portfolio website Using Svelte . This website is not like your
 
 ## A personal portfolio website made using `@sveltejs/kit`.
 The user can surf through this website as if its a Desktop . There are four folders and a NavBar below. The four folders Home, Projects, About and Experiences and Detailed information about me . The NavBar has icons and hyperlinks to github and linkedin. 
+Recommended : refresh at every page to be updated . 
 
 <p align="left">
-    <img width="500" height="auto" src="https://i.imgur.com/IafmSKu.png" alt="homepagescreenshot" />
+    <img width="500" height="auto" src="src/pictures/PortfolioHomepage.png" alt="homepagescreenshot" />
 </p>
 
-To view a demo example, **[click here](https://gianmarco.netlify.app/)**
+To view a demo example, **[click here](https://main--tourmaline-souffle-5202b8.netlify.app)**
 
 ## Features
 
@@ -54,6 +55,9 @@ $ npm run dev
 Deploying your website on Netlify it's optional but I reccomand it in order to deploy it faster and easly.
 
 You just need to fork this repo and linking it to your Netlify account.
+
+link to my portfolio : https://main--tourmaline-souffle-5202b8.netlify.app 
+
 
 To make changes or regarding this project contact : sj4182@nyu.edu
 >>>>>>> 78bb544 (First Commit)
