@@ -9,6 +9,11 @@
 	import { customBackground } from '$lib/store';
 	import { Email } from '$lib/Constants';
 	// import routes from '$lib/NavRoutes';
+	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
+	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
+	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
+	import FaWindows from 'svelte-icons/fa/FaWindows.svelte';
+	
 
 	let copied = false;
 	const cookieEnabled = false;

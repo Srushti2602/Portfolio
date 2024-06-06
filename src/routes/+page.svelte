@@ -1,4 +1,5 @@
 <script>
+
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
 	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
