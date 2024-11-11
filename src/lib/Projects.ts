@@ -1,4 +1,12 @@
 const projects = [
+	
+	{
+		title: 'CleverConnect',
+		technologies: ['Ollama','Github Actions','Trello', 'Slack',' Google Mail', 'Google Calendar'],
+		description: ' Developed a Slack-integrated automation bot that streamlined workflow by connecting Slack, Google Gmail, Google Calendar, Trello, and Ollama AI model. Designed to fetch recent emails, identify meeting-related messages, and extract meeting details through NLP processing with the Ollama model. The bot synchronized calendar events with Trello, allowing users to manage tasks directly through Slack commands. Built using Python with Slack Bolt API for event handling, Google API for Gmail and Calendar integration, and Trello API for task management. Implemented OAuth authentication and ensured secure handling of API credentials. Leveraged GitHub Actions for CI/CD to automate Ollama model updates and testing. This project enhanced productivity by consolidating communication, scheduling, and task management into a single, efficient Slack-based interface.',
+		url: 'https://github.com/Srushti2602/CleverConnect-application',
+		category: 'cloud-computing'
+	},
 	{
 		title: 'ToDoSync',
 		technologies: ['Docker', 'Kubernetes','AWS services' , 'Minikube', 'Prometheus'],
@@ -13,6 +21,7 @@ const projects = [
 		url: 'https://github.com/Srushti2602/SrushEats',
 		category: 'cloud-computing'
 	},
+	
 	{
 		title: 'Virtual companion',
 		technologies: ['NLP (natural language processing)', 'blob',' Django'],

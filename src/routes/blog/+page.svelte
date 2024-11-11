@@ -13,6 +13,21 @@
         <h2>Experiences</h2>
         <div class="skills-container">
             <div class="skill-box">
+                <h4>Civil and Urban Engineeering May 2024 – Aug 2024</h4>
+				<h5>Website Developer and Assistant </h5>
+                <p>Leveraging front-end technologies like React to develop and enhance the CUE website, focusing on creating a more intuitive and visually
+                    appealing user interface. Continuously updating and maintaining the website to ensure seamless integration with databases, thereby improving
+                    overall user experience and functionality.</p>
+            </div>
+            <div class="skill-box">
+                <h4>Poly Prep Education May 2024 – June 2024</h4>
+				<h5>Teaching Programming in Python </h5>
+                <p>Taught undergraduates and high Schoolers programming in python language crash course . The course duraton was two weeks wherein all teh topis from the basics 
+                    to advaced level object oriented programming was covered . The course was designed in such a way that it was easy for the students to understand and grasp the content . At the end of the course 
+                    the students were able to make a project on their own and present it to the class. 
+                </p>
+            </div>
+            <div class="skill-box">
                 <h4>GeauxTV. Network May 2024 – present</h4>
 				<h5>Web Developer </h5>
                 <p>Responsible for developing and maintaining the website, ensuring optimal placement of images, buttons, and menu options for user accessibility.
@@ -26,18 +41,19 @@ development.</p>
                 <p>Teaching lab , grading assignments and conducting exams are my responsibilities. I am also suppose to help them in coding and debugging their
 projects . Problem solving for a batch of 50 students fostering a conducive learning environment for skill development.</p>
             </div>
+            
+			<div class="skill-box">
+                <h4> Graduate Lab Assistant, Applied Physics Lab May 2024 - August 2024 </h4>
+				<h5>New York University</h5>
+                <p>I set up and prepared weekly experiments, collected and analyzed experiment reports, assisted professors with their research projects,
+				supported two undergraduate classes during their laboratory sessions, and maintained a safe and orderly laboratory environment.</p>
+            </div>
             <div class="skill-box">
                 <h4>Data Science and Business analyst intern Nov 2022 – Dec 2022</h4>
 				<h5>The Spark foundation </h5>
                 <p>Developed a stock market prediction model using numerical and textual analysis, incorporating historical stock prices from Yahoo Finance and
 Indian news headlines. Visualized predicted close prices alongside actual data, achieving a low RMSE of 0.524 with Random Forest Regression,
 demonstrating superior performance.</p>
-            </div>
-			<div class="skill-box">
-                <h4> Graduate Lab Assistant, Applied Physics Lab May 2024 - August 2024 </h4>
-				<h5>New York University</h5>
-                <p>I set up and prepared weekly experiments, collected and analyzed experiment reports, assisted professors with their research projects,
-				supported two undergraduate classes during their laboratory sessions, and maintained a safe and orderly laboratory environment.</p>
             </div>
 			<div class="skill-box">
                 <h4> CO - Chairperson at ISTE -VESIT (Indian Society of Technical Education)</h4>
