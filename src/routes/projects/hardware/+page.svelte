@@ -8,7 +8,7 @@
     <title>Hardware Projects</title>
 </svelte:head>
 
-<div class="projectContainer responsive-container">
+<div class="projectContainer responsive-container tech-pattern-bg">
     <div class="projects overflow-hidden">
         <h1>Hardware Projects</h1>
         <p class="note justified ">

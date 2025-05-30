@@ -8,7 +8,7 @@
     <title>Cloud Computing Projects</title>
 </svelte:head>
 
-<div class="projectContainer responsive-container">
+<div class="projectContainer responsive-container tech-pattern-bg">
     <div class="projects overflow-hidden">
         <h1>Cloud computing Projects</h1>
         <p class="note justified">
@@ -79,11 +79,37 @@
 	h1 {
 		font-weight: 700;
 		text-align: start;
+		margin-top: 2rem;
+		padding-top: 1rem;
+		margin-bottom: 1.5rem;
+		background: var(--primary-gradient);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		position: relative;
+		display: inline-block;
+	}
+	
+	h1::after {
+		content: '';
+		position: absolute;
+		bottom: -8px;
+		left: 0;
+		width: 60px;
+		height: 3px;
+		background-color: var(--secondary-color);
+		border-radius: 3px;
 	}
 
 	h2 {
 		display: flex;
-		margin: 0;
+		margin: 0 0 10px 0;
+		color: var(--text-light);
+		background: var(--secondary-gradient);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: 600;
 	}
 
 	.project {
@@ -92,12 +118,29 @@
 		display: flex;
 		flex-direction: column;
 		color: white;
-		background: #111;
+		background: var(--card-bg);
 		padding: 2rem;
 		width: 100%;
-		border-radius: 5px;
-		transition: transform 0.2s ease-in-out;
-		border-radius: 25px;
+		border-radius: 12px;
+		transition: all 0.3s ease;
+		border: 1px solid rgba(255, 255, 255, 0.05);
+		position: relative;
+		overflow: hidden;
+	}
+	
+	.project::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 4px;
+		height: 100%;
+		background: var(--secondary-gradient);
+	}
+	
+	.project:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 	}
 
 	.project p {
@@ -134,9 +177,39 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: white;
-		border: 2px solid white;
-		padding: 10px;
+		color: var(--background-dark);
+		background: var(--secondary-gradient);
+		padding: 12px 20px;
+		border-radius: 6px;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+	}
+	
+	.button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: var(--accent-gradient);
+		z-index: -1;
+		transition: transform 0.5s ease;
+		transform: scaleX(0);
+		transform-origin: right;
+	}
+	
+	.button:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+	
+	.button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 	}
 
 	@media (min-width: 900px) {
