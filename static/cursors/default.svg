@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Rocket Cursor</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Rocket Body -->
+        <path d="M16,6 C13,6 10,12 10,18 L10,22 L22,22 L22,18 C22,12 19,6 16,6 Z" fill="#4ECDC4" stroke="#000000" stroke-width="1"></path>
+        
+        <!-- Rocket Nose Cone -->
+        <path d="M13,6 C13,6 16,3 19,6" stroke="#000000" stroke-width="1" fill="#4ECDC4"></path>
+        
+        <!-- Rocket Window -->
+        <circle cx="16" cy="14" r="2" fill="#FFFFFF" stroke="#000000" stroke-width="0.5"></circle>
+        
+        <!-- Rocket Fins -->
+        <path d="M10,20 L7,24 L10,22" fill="#FFD43B" stroke="#000000" stroke-width="1"></path>
+        <path d="M22,20 L25,24 L22,22" fill="#FFD43B" stroke="#000000" stroke-width="1"></path>
+        
+        <!-- Rocket Flames -->
+        <path d="M13,22 L12,26 L16,24 L20,26 L19,22" fill="#FFD43B" stroke="#000000" stroke-width="0.5"></path>
+        <path d="M14,22 L13,25 L16,23.5 L19,25 L18,22" fill="#FF5733" stroke="none"></path>
+    </g>
+</svg>

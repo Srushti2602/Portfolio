@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-# Portfolio
-I have created my portfolio website Using Svelte . This website is not like your ordinary portfolio website but has a User Interface like a Desktop . It makes the users feel as if they are surfing through a desktop and can open folders to read the respective information available .
-=======
-# ⚡️SvelteKit-Portfolio⚡️
+# 🚀 Desktop Metaphor Portfolio
 
-## A personal portfolio website made using `@sveltejs/kit`.
+## A creative portfolio website built with SvelteKit featuring a desktop-inspired UI
 The user can surf through this website as if its a Desktop . There are four folders and a NavBar below. The four folders Home, Projects, About and Experiences and Detailed information about me . The NavBar has icons and hyperlinks to github and linkedin. 
 Recommended : refresh at every page to be updated . 
 
@@ -14,19 +10,26 @@ Recommended : refresh at every page to be updated .
 
 To view a demo example, **[click here](https://main--tourmaline-souffle-5202b8.netlify.app)**
 
-## Features
 
-- Modern and Minimal UI Design
-- Home, Projects, About and blog sections
-- Blog made using `DEV.TO` API. (Medium WIP)
-- Fully Responsive
-- Performances and SEO optimizations
-- Looks Like a Desktop 
+## ✨ Features
 
-# Dependencies
+- **Desktop Metaphor UI**: Navigate through folders and windows for a unique user experience
+- **Interactive Elements**: Custom rocket cursor, hover effects, and animations
+- **Responsive Design**: Optimized for both desktop and mobile devices
+- **Enhanced Color Scheme**: Cohesive palette with gradients and accent colors (yellow, teal, purple)
+- **Background Patterns**: Subtle tech-related patterns for visual interest
+- **Content Sections**: Home, Projects, About, and Experiences
+- **Social Links**: Easy access to GitHub, LinkedIn, and contact information
+- **Performance Optimized**: Fast loading and smooth animations
 
-- svelte-icons
-- @sveltejs/adapter-netlify
+## 🛠️ Technologies & Dependencies
+
+- **Framework**: SvelteKit
+- **Styling**: Custom CSS with responsive design
+- **Deployment**: Netlify via `@sveltejs/adapter-netlify`
+- **Icons**: Font Awesome via `svelte-icons`
+- **Responsive Design**: Custom media queries and flexible layouts
+- **Custom Cursors**: SVG-based cursors for enhanced user experience
 
 # Steps ▶️
 

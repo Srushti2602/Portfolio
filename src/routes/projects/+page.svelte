@@ -11,7 +11,7 @@
     import FaHome from 'svelte-icons/fa/FaHome.svelte';
     import { modalOpened } from '$lib/store';
     import { onMount } from 'svelte';
-
+    import '$lib/styles/background-patterns.css';
 
     let currentCategory = null;
     let showWindowsModal = false;
@@ -66,7 +66,7 @@
     <title>Projects</title>
 </svelte:head>
 
-<main>
+<main class="responsive-container overflow-hidden project-container tech-nodes-pattern">
     {#if !currentCategory}
         <FolderPage {categories} on:clickFolder={handleFolderClick} />
     {:else if currentCategory === 'hardware'}

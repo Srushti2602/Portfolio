@@ -6,8 +6,8 @@
     <title>Deep Learning Projects</title>
 </svelte:head>
 
-<div class="projectContainer">
-    <div class="projects">
+<div class="projectContainer responsive-container">
+    <div class="projects overflow-hidden">
         <h1>Deep Learning Projects</h1>
         <p class="note justified">
             My interest in machine learning and deep learning, coupled with a desire to explore high-performance computing (HPC), architectures, and large language models (LLMs), has driven me to create a series of innovative projects.

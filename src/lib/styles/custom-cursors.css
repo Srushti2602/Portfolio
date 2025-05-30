@@ -1,0 +1,30 @@
+/* Custom Cursors for Portfolio */
+
+/* Default cursor - Rocket */
+body {
+  cursor: url('/cursors/default.svg') 16 14, auto;
+}
+
+/* Pointer cursor for clickable elements - Rocket with boost */
+a, button, [role="button"], 
+.folder, .desktop-btn, .social-link, 
+.window-control, .taskbar-icon {
+  cursor: url('/cursors/pointer.svg') 16 12, pointer;
+}
+
+/* Hover effect for interactive elements */
+a:hover, button:hover, [role="button"]:hover, 
+.folder:hover, .desktop-btn:hover, .social-link:hover {
+  cursor: url('/cursors/pointer.svg') 16 12, pointer;
+  /* Additional hover styles are already defined elsewhere */
+}
+
+/* Apply custom cursor to the entire app */
+#app, .desktop-container, .responsive-container {
+  cursor: url('/cursors/default.svg') 16 14, auto;
+}
+
+/* Add a transition effect when elements become interactive */
+a, button, [role="button"], .folder, .desktop-btn, .social-link, .window-control, .taskbar-icon {
+  transition: transform 0.2s ease;
+}

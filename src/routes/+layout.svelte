@@ -8,6 +8,11 @@
 	import { onMount } from 'svelte';
 	import { customBackground } from '$lib/store';
 	import { Email } from '$lib/Constants';
+	import '$lib/styles/responsive.css';
+	import '$lib/styles/enhanced-desktop.css';
+	import '$lib/styles/custom-cursors.css';
+	import DesktopTaskbar from '$lib/components/DesktopTaskbar.svelte';
+	import MobileNavigation from '$lib/components/MobileNavigation.svelte';
 	// import routes from '$lib/NavRoutes';
 	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
@@ -63,65 +68,74 @@
 
 <svelte:body use:cssVariables={{ background: $customBackground }} />
 
-{#if showCookieModal && cookieEnabled}
-	<div class="cookieContainer">
-		<p>🍪 This website uses <a href="privacy-policy">Cookies.</a></p>
-		<div
-			role="button"
-			tabindex="0"
-			on:keypress={() => {
-				showCookieModal = false;
-				localStorage.setItem('showCookieModal', 'false');
-			}}
-			on:click={() => {
-				showCookieModal = false;
-				localStorage.setItem('showCookieModal', 'false');
-			}}
-		>
-			&#10005;
-		</div>
-	</div>
-{/if}
-
-<Modal>
-	<div slot="content" class="modalContainer">
-		<h1>Email:</h1>
-		<div>
-			<p>{Email}</p>
-			&nbsp;
-			<div class="tooltip">
-				<Tooltip tooltip={copied ? 'Copied' : 'Copy'}>
-					<div
-						id="clipboard"
-						role="button"
-						tabindex="0"
-						on:keypress={() => {
-							copied = true;
-							copy();
-							setTimeout(() => {
-								copied = false;
-							}, 500);
-						}}
-						on:click={() => {
-							copied = true;
-							copy();
-							setTimeout(() => {
-								copied = false;
-							}, 500);
-						}}
-					>
-						<div>
-							<FaCopy />
-						</div>
-					</div>
-				</Tooltip>
-			</div>
-		</div>
-		<Button>Send Email</Button>
-	</div>
-</Modal>
-
-<slot />
+<div class="desktop-container">
+  <div class="desktop-wallpaper"></div>
+  
+  {#if showCookieModal && cookieEnabled}
+    <div class="cookieContainer">
+      <p>🍪 This website uses <a href="privacy-policy">Cookies.</a></p>
+      <div
+        role="button"
+        tabindex="0"
+        on:keypress={() => {
+          showCookieModal = false;
+          localStorage.setItem('showCookieModal', 'false');
+        }}
+        on:click={() => {
+          showCookieModal = false;
+          localStorage.setItem('showCookieModal', 'false');
+        }}
+      >
+        &#10005;
+      </div>
+    </div>
+  {/if}
+  
+  <Modal>
+    <div slot="content" class="modalContainer">
+      <h1>Email:</h1>
+      <div>
+        <p>{Email}</p>
+        &nbsp;
+        <div class="tooltip">
+          <Tooltip tooltip={copied ? 'Copied' : 'Copy'}>
+            <div
+              id="clipboard"
+              role="button"
+              tabindex="0"
+              on:keypress={() => {
+                copied = true;
+                copy();
+                setTimeout(() => {
+                  copied = false;
+                }, 500);
+              }}
+              on:click={() => {
+                copied = true;
+                copy();
+                setTimeout(() => {
+                  copied = false;
+                }, 500);
+              }}
+            >
+              <div>
+                <FaCopy />
+              </div>
+            </div>
+          </Tooltip>
+        </div>
+      </div>
+      <Button>Send Email</Button>
+    </div>
+  </Modal>
+  
+  <div class="content-area">
+    <slot />
+  </div>
+  
+  <DesktopTaskbar />
+  <MobileNavigation />
+</div>
 
 
 
@@ -135,15 +149,52 @@
 		font-display: optional;
 		src: url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 	}
+	
+	.desktop-container {
+		position: relative;
+		min-height: 100vh;
+		padding-bottom: 40px; /* Space for taskbar */
+	}
+	
+	.content-area {
+		padding: 1rem;
+		padding-bottom: 60px;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	
+	@media (max-width: 768px) {
+		.desktop-container {
+			padding-bottom: 60px;
+		}
+		
+		.content-area {
+			padding-bottom: 80px;
+		}
+	}
 
 	:global(#svelte) {
-		width: 100vw;
+		width: 100%;
 		height: 100%;
 		max-width: 900px;
+		padding: 0 1rem;
+		box-sizing: border-box;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+	
+	@media (min-width: 600px) {
+		:global(#svelte) {
+			padding: 0 2rem;
+		}
+	}
+	
+	@media (min-width: 900px) {
+		:global(#svelte) {
+			padding: 0;
+		}
 	}
 
 	:global(html),

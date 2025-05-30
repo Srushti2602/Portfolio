@@ -8,8 +8,8 @@
     <title>Cloud Computing Projects</title>
 </svelte:head>
 
-<div class="projectContainer">
-    <div class="projects">
+<div class="projectContainer responsive-container">
+    <div class="projects overflow-hidden">
         <h1>Cloud computing Projects</h1>
         <p class="note justified">
             My exploration of virtual worlds, efficient hardware utilization, and multi-user accessibility has driven my cloud computing projects. These projects demonstrate my ability to manage millions of users and their data, ensuring data privacy through various databases such as SQL, NoSQL, DynamoDB, and MongoDB. Additionally, I have delved into how virtual environments collaborate via Docker and container services, showcasing these skills in my work.
